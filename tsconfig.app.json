@@ -3,7 +3,14 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "types": [
+      // "node"
+    ],
+    // "typeRoots": [ "../node_modules/@types" ],
+    // "paths": {
+    //   "fs": ["./node_modules/fs-web"],
+    // }
+
   },
   "files": [
     "src/main.ts",

@@ -1,0 +1,22 @@
+<nb-layout>
+  <nb-layout-column>
+    <nb-card
+      size="large"
+      [nbSpinner]="loading"
+      nbSpinnerStatus="success"
+      nbSpinnerSize="large"
+    >
+      <nb-card-body>
+        <nb-list>
+          <nb-list-item
+            *ngFor="let citizen of citizenList"
+            (click)="citizenDetails(citizen)"
+          >
+            <nb-user [name]="citizen.first_name"> </nb-user>
+            {{ citizen.nationality_id }}
+          </nb-list-item>
+        </nb-list>
+      </nb-card-body>
+    </nb-card>
+  </nb-layout-column>
+</nb-layout>

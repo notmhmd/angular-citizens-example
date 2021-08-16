@@ -20,6 +20,12 @@
       "es2018",
       "dom"
     ]
+    ,"paths": {
+      // "os":["src/empty.ts"],
+      // "crypto": [
+      //   "./node_modules/crypto-js"
+      // ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

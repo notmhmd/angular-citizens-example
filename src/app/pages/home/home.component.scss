@@ -1,0 +1,40 @@
+nb-layout-column{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+}
+
+nb-card:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+    0 24px 46px var(--box-shadow-color);
+}
+
+nb-card:hover .overlay {
+  transform: scale(4) translateZ(0);
+}
+
+nb-card:hover nb-icon {
+  transform: rotate(
+    45deg
+    );
+}
+
+nb-card-body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nb-icon{
+  font-size: 10rem;
+}
+
+.service-type{
+  font-size: 2rem;
+}

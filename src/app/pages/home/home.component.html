@@ -1,0 +1,25 @@
+<nb-layout>
+
+  <nb-layout-column>
+    <nb-card size="small" (click)="selectService('soap')">
+      <nb-card-body>
+        <nb-icon icon="globe-2-outline" status="basic"></nb-icon>
+        <div class="service-type">
+          Soap Service
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </nb-layout-column>
+
+  <nb-layout-column left >
+    <nb-card size="small" (click)="selectService('rest')">
+      <nb-card-body>
+        <nb-icon icon="globe-outline" status="basic"></nb-icon>
+        <div class="service-type">
+          Rest Service
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </nb-layout-column>
+
+ </nb-layout>

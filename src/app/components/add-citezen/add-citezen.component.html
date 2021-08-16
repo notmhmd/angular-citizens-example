@@ -1,0 +1,59 @@
+<nb-layout>
+  <nb-layout-column>
+    <form [formGroup]="formGroup">
+      <nb-card
+        size="large"
+        [nbSpinner]="loading"
+        nbSpinnerStatus="danger"
+        nbSpinnerSize="large"
+      >
+        <nb-card-body>
+          <input
+            type="text"
+            nbInput
+            formControlName="nationality_id"
+            placeholder="Nationality ID"
+          />
+          <input
+            type="text"
+            nbInput
+            formControlName="first_name"
+            placeholder="First Name"
+          />
+
+          <input
+            type="text"
+            nbInput
+            formControlName="last_name"
+            placeholder="Last Name"
+          />
+
+          <input
+            type="tel"
+            nbInput
+            formControlName="phone_number"
+            placeholder="Phone Number"
+          />
+
+          <input
+            type="text"
+            nbInput
+            formControlName="gender"
+            placeholder="Gender"
+          />
+
+          <input
+            type="text"
+            nbInput
+            formControlName="state"
+            placeholder="State"
+          />
+
+          <button nbButton status="success" (click)="addCitizen()">
+            Success<nb-icon icon="checkmark-outline"></nb-icon>
+          </button>
+        </nb-card-body>
+      </nb-card>
+    </form>
+  </nb-layout-column>
+</nb-layout>
